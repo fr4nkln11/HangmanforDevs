@@ -1,18 +1,46 @@
+# Hangman game by Franklin
+
+"""
+Overview:
+* Pick secret word
+* hide secret word, replace each letter with dashes
+* give a hint (optional)
+* player has to guess all the letters
+* player fails after 5 wrong guesses
+* player wins if all letters are guessed correctly before 5 wrong guesses are made
+* give player a score based on how well they guessed
+
+mechanism:
+* store secret word
+* display dashes on screen
+* ask user for a letter
+* check if letter in word
+** update screen with guessed letter if correct
+** reduce life count by 1 if wrong
+* repeat process until life count is 0 or all letters have been guessed
+"""
 import os
-import random
+import time
 
 class Hangman:
+    """
+    This is the main class for the Hangman game    
+    """
     LIFE_COUNT = 5
     word_list = ["HELICOPTER", "CHOPPER", "APACHE", "CHINOOK"]
     guessed_letters = []
+    correct_guesses = 0
 
     def word_picker(self):
         for word in self.word_list:
             yield word
     
+    new_word = None
     secret_word = None
-
-    letters = None # a dictionary of letters that have either been guessed or not
+    letters = None 
+    
+    def message(self, prompt):
+        print(prompt)
 
     def render(self, word: dict) -> str:
         """
@@ -51,51 +79,55 @@ class Hangman:
         
         if len(guess) == 1:
             if guess not in self.guessed_letters and guess != "":
-                if guess in self.letters.keys():
+                if guess in self.letters.keys(): # correct guess
                     self.letters[guess] = True
+                    self.correct_guesses += 1
                     self.render(self.letters)
-                else:
+                else: # incorrect guess
                     self.LIFE_COUNT -= 1
                 self.guessed_letters.append(guess)
             else:
                 print("You have already guessed this letter, try something else")
-        elif any(char.isdigit() for char in guess): # check if input contains digit
-            print("you can only guess one letter not a number")
         else:
             print("you can only guess one letter at a time")
     
-    def word_complete(self):
-        if all(list(self.letters.values())):
-            return True
+    # def word_complete(self):
+    #     if all(list(self.letters.values())):
+    #         return True
+    
+    def reset(self):
+        self.secret_word = next(self.new_word)
+        self.letters = {letter : False for letter in self.secret_word}
+        self.guessed_letters = []
+        self.LIFE_COUNT = 5
+        self.render(self.letters)
+
+    def game_stop(self):
+        if all(list(self.letters.values())): # check if all letters have been correctly guessed 
+            print("Word completed!!!")
+            game_continue = input("Enter any key to continue, Enter 'Q' to quit:").upper()
+            if game_continue != "Q":
+                try:
+                    self.reset()
+                except StopIteration:
+                    print("Ooops! we've run out of words")
+                    return True
+            else:
+                return True
+        elif self.LIFE_COUNT == 0:
+           print("You ran out of chances, Game Over!!!")
+           return True
 
     def run(self):
-        new_word = self.word_picker()
-        self.secret_word = next(new_word)
+        self.new_word = self.word_picker()
+        self.secret_word = next(self.new_word)
         self.letters = {letter : False for letter in self.secret_word}
         while True:
             self.render(self.letters)
             guess = str(input("pick a letter from A - Z: ")).upper()
             self.check(guess)
-
-            if self.word_complete():
-                print("Word completed!!!")
-                game_continue = input("would you like to keep playing by guessing another word? (Y/N):").upper()
-                if game_continue == "Y":
-                    try:
-                        self.secret_word = next(new_word)
-                        self.letters = {letter : False for letter in self.secret_word}
-                        self.guessed_letters = []
-                        self.render(self.letters)
-                    except StopIteration:
-                        print("Ooops! we've run out of words")
-                        print("Thank you for sticking around!")
-                        break
-
-                elif game_continue == "N":
-                    print("Thank you for sticking around!")
-                    break
-            elif self.LIFE_COUNT == 0:
-                print("You ran out of chances, Game Over!!!")
+            if self.game_stop():
+                print("Thank you for playing my game!")
                 break
 
 if __name__ == "__main__":
