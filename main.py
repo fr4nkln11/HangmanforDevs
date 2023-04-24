@@ -30,6 +30,7 @@ class Hangman:
     word_list = ["HELICOPTER", "CHOPPER", "APACHE", "CHINOOK"]
     guessed_letters = []
     correct_guesses = 0
+    message_box = []
 
     def word_picker(self):
         for word in self.word_list:
@@ -40,7 +41,7 @@ class Hangman:
     letters = None 
     
     def message(self, prompt):
-        print(prompt)
+        self.message_box.append(prompt)
 
     def render(self, word: dict) -> str:
         """
@@ -64,7 +65,10 @@ class Hangman:
 
         os.system("cls||clear")
         print(f"\n{''.join(screen)} \n | Lives: {self.LIFE_COUNT}\n | Guesses made: {','.join(self.guessed_letters)}\n") # display current status
-    
+        if self.message_box:
+            print(self.message_box[0])
+            self.message_box.pop()  
+
     def check(self, guess: str):
         """
         First check if the letter has already been guessed,
@@ -87,9 +91,9 @@ class Hangman:
                     self.LIFE_COUNT -= 1
                 self.guessed_letters.append(guess)
             else:
-                print("You have already guessed this letter, try something else")
+                self.message("You have already guessed this letter, try something else")
         else:
-            print("you can only guess one letter at a time")
+            self.message("you can only guess one letter at a time")
     
     # def word_complete(self):
     #     if all(list(self.letters.values())):
