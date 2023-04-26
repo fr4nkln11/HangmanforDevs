@@ -20,7 +20,6 @@ mechanism:
 * repeat process until life count is 0 or all letters have been guessed
 """
 import os
-import time
 
 class Hangman:
     """
@@ -31,14 +30,14 @@ class Hangman:
     guessed_letters = []
     correct_guesses = 0
     message_box = []
+    new_word = None
+    secret_word = None
+    letters = None 
 
     def word_picker(self):
         for word in self.word_list:
             yield word
     
-    new_word = None
-    secret_word = None
-    letters = None 
     
     def message(self, prompt):
         self.message_box.append(prompt)
@@ -138,6 +137,3 @@ if __name__ == "__main__":
     game = Hangman()
     print("Hangman game by fr4nkln11 2023")
     game.run()
-
-
-
