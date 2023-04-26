@@ -1,4 +1,4 @@
-from controller.controller import HangmanController
+from controllers.controller import HangmanController
 
 game = HangmanController()
 game.run()

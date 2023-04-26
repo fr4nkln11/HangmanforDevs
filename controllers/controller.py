@@ -1,5 +1,5 @@
-from view.view import HangmanView
-from model.model import HangmanModel
+from views.view import HangmanView
+from models.model import HangmanModel
 from rich import print 
 
 class HangmanController:
