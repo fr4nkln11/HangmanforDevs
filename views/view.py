@@ -17,6 +17,7 @@ class HangmanView:
 
         os.system("cls||clear")
         print(f"\n{''.join(screen)} \n | Lives: {model.LIFE_COUNT}\n | Guesses made: {','.join(model.guessed_letters)}\n") # display current status
+        print(f"Hint: {model.secret_word['meaning']}")
         if self.message_box:
             print(self.message_box[0])
             self.message_box.pop()
