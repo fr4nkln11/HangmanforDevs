@@ -1,16 +1,14 @@
-{
-    "words": [
-        {"word": "apple", "hint": "a fruit", "meaning": "a round fruit with a red, yellow, or green skin and a white inside"},
-        {"word": "banana", "hint": "a fruit", "meaning": "an elongated yellow fruit with soft sweet flesh"},
-        {"word": "cherry", "hint": "a fruit", "meaning": "a small round fruit with a red or black skin and a stone inside"},
-        {"word": "orange", "hint": "a fruit", "meaning": "a large round juicy citrus fruit with a tough bright reddish-yellow rind"},
-        {"word": "watermelon", "hint": "a fruit", "meaning": "a large melon with a hard green rind and sweet red flesh"},
-        {"word": "strawberry", "hint": "a fruit", "meaning": "a sweet soft red fruit with a seed-studded surface"},
-        {"word": "pineapple", "hint": "a fruit", "meaning": "a large tropical fruit with a tough spiky rind and sweet yellow flesh"},
-        {"word": "grapefruit", "hint": "a fruit", "meaning": "a large round citrus fruit with a pink or yellow skin and bitter juicy pulp"},
-        {"word": "pomegranate", "hint": "a fruit", "meaning": "a round fruit with a tough reddish outer skin and sweet edible pulp"},
-        {"word": "kiwi", "hint": "a fruit", "meaning": "a small oval fruit with a brown fuzzy skin and green flesh"},
-        {"word": "mango", "hint": "a fruit", "meaning": "a fleshy yellowish-orange tropical fruit with a large woody seed"},
-        {"word": "pear", "hint": "a fruit", "meaning": "a sweet yellowish- or brownish-green edible fruit that is typically narrow at the stalk and wider toward the base"}
-    ]
-}
+[
+    {"word": "apple", "hint": "a fruit", "meaning": "a round fruit with a red, yellow, or green skin and a white inside"},
+    {"word": "banana", "hint": "a fruit", "meaning": "an elongated yellow fruit with soft sweet flesh"},
+    {"word": "cherry", "hint": "a fruit", "meaning": "a small round fruit with a red or black skin and a stone inside"},
+    {"word": "orange", "hint": "a fruit", "meaning": "a large round juicy citrus fruit with a tough bright reddish-yellow rind"},
+    {"word": "watermelon", "hint": "a fruit", "meaning": "a large melon with a hard green rind and sweet red flesh"},
+    {"word": "strawberry", "hint": "a fruit", "meaning": "a sweet soft red fruit with a seed-studded surface"},
+    {"word": "pineapple", "hint": "a fruit", "meaning": "a large tropical fruit with a tough spiky rind and sweet yellow flesh"},
+    {"word": "grapefruit", "hint": "a fruit", "meaning": "a large round citrus fruit with a pink or yellow skin and bitter juicy pulp"},
+    {"word": "pomegranate", "hint": "a fruit", "meaning": "a round fruit with a tough reddish outer skin and sweet edible pulp"},
+    {"word": "kiwi", "hint": "a fruit", "meaning": "a small oval fruit with a brown fuzzy skin and green flesh"},
+    {"word": "mango", "hint": "a fruit", "meaning": "a fleshy yellowish-orange tropical fruit with a large woody seed"},
+    {"word": "pear", "hint": "a fruit", "meaning": "a sweet yellowish- or brownish-green edible fruit that is typically narrow at the stalk and wider toward the base"}
+]

@@ -1,10 +1,23 @@
+from view import HangmanView
 from model import HangmanModel
-from rich import print
+from rich import print 
 
-game = HangmanModel()
+class HangmanController:
+    def __init__(self) -> None:
+        self.model = HangmanModel()
+        self.view = HangmanView()
+    
+    def run(self):
+        while not self.model.game_over:
+            self.view.render(self.model)
+            guess = input("pick a letter from A - Z: ").lower()
+            message = self.model.check_guess(guess)
+            self.view.message(message)
+        
+        self.view.render(self.model)
+        print("Thank you for playing my game!")
 
-new_word = game.get_new_word()
 
-for i in range(3):
-    print(new := next(new_word), game.get_word_meaning(new))
-
+if __name__ == "__main__":
+    game = HangmanController()
+    game.run()
