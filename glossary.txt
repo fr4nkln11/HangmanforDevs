@@ -1,0 +1,99 @@
+Algorithm - Step-by-step instructions for solving a problem
+Abstraction - Simplifying complex systems by breaking them down into smaller parts
+Application Programming Interface - A set of rules for accessing a web-based software application
+Assembler - Converts assembly language into machine code
+Assembly Language - Low-level programming language that uses mnemonic codes to represent machine code instructions
+Agile Development - Iterative and flexible approach to software development
+Authentication - Process of verifying a user's identity
+Binary - Number system using only 0s and 1s
+Bit - Smallest unit of data in a computer
+Byte - Group of 8 bits
+Boolean - Data type with two possible values: true or false
+Bandwidth - Maximum amount of data that can be transmitted over a network
+Cache - Temporary storage area for frequently accessed data
+Command Line Interface - Text-based interface for interacting with a computer's operating system
+Compiler - Software that converts code written in a high-level programming language into machine code
+Computer Architecture - Design of a computer system
+Central Processing Unit - "Brain" of a computer that performs most of the processing
+Data Structure - Way of organizing and storing data
+Database - Collection of data organized in a specific way
+Debugging - Process of finding and fixing errors in code
+Domain Name System - System that translates domain names into IP addresses
+Docker - Platform for packaging, distributing, and running applications
+Dynamic Programming - Method for solving complex problems by breaking them down into smaller subproblems
+Encryption - Process of converting data into a code to prevent unauthorized access
+Firewall - Network security system that controls incoming and outgoing network traffic
+Frontend - Part of a web application that users interact with directly
+Functional Programming - Programming paradigm that emphasizes functions and avoids mutable data
+Git - Version control system for tracking changes in code
+Graphical User Interface - Interface that uses graphical elements to allow users to interact with a software application
+Hypertext Transfer Protocol - Protocol used for transferring data over the web
+Integrated Development Environment - Software application that provides tools for software development
+Inheritance - Mechanism for creating new classes based on existing ones
+Java Virtual Machine - Virtual machine that runs Java bytecode
+JavaScript - High-level programming language used for creating dynamic web content
+JavaScript Object Notation - Lightweight data interchange format
+Kernel - Core component of an operating system
+Lambda Function - Anonymous function that can be passed as an argument to another function
+Machine Learning - Subset of artificial intelligence that involves training machines to learn from data
+Model-View-Controller - Design pattern for organizing code in a web application
+Object-Oriented Programming - Programming paradigm based on objects that interact with one another
+Operating System - Software that manages computer hardware and software resources
+Parallel Computing - Simultaneous execution of multiple tasks by dividing them into smaller parts
+Parser - Program that analyzes code and converts it into a format that can be used by another program
+Protocol - Set of rules for exchanging data over a network
+Python - High-level programming language used for a variety of tasks
+Query - Request for data from a database
+Recursion - Function that calls itself
+Regular Expression - Pattern used to match strings of text
+Representational State Transfer API - Web-based software architecture for creating web services
+Routing - Process of directing
+Ruby - High-level programming language with a focus on simplicity and productivity
+Relational Database - Database that stores data in tables with relationships between them
+Source Code - Code written by a programmer in a high-level programming language
+Software Development Kit - Collection of tools for software development
+Stack - Data structure that operates on a last-in-first-out (LIFO) principle
+Static Typing - Programming language feature that requires variables to be declared with a specific data type
+Subroutine - Reusable block of code that performs a specific task
+SQL - Structured Query Language used for managing and querying relational databases
+Syntax - Set of rules for writing code in a programming language
+System Call - Request made by a program to the operating system for a service
+Test-Driven Development - Software development methodology that emphasizes writing tests before writing code
+Threading - Concurrent execution of multiple threads within a single program
+Transpiler - Software that translates code written in one programming language to another
+Turing Machine - Hypothetical device used in the study of computation and algorithms
+Unix - Operating system developed in the 1970s
+URL - Uniform Resource Locator used to identify and locate web resources
+Unicode - Standard for encoding characters in digital text
+Virtual Machine - Software that simulates a computer system
+Version Control - System for tracking changes to code over time
+Virtual Private Network - Secure network connection that allows remote access to a private network
+Vulnerability - Weakness in software that can be exploited by attackers
+Web Server - Software that serves web pages to clients over the internet
+While Loop - Loop that continues executing as long as a condition is true
+Web Development - Process of creating web applications and websites
+XML - Extensible Markup Language used for storing and transmitting data
+XOR - Logical operator that returns true if only one of two values is true
+Yacc - Compiler-compiler used for generating parsers and compilers
+YAML - Human-readable data serialization format
+Zip - Compressed file format used for reducing file size and archiving
+API Gateway - Proxy server that acts as an interface between a web application and a microservices architecture
+Agile Manifesto - Statement of values and principles for agile software development
+Artificial Neural Network - Computing system inspired by the structure of the human brain
+Authentication Token - Data token used for authentication and authorization purposes
+Babel - Compiler for translating ECMAScript 2015+ (ES6+) code into backwards-compatible JavaScript
+Big O Notation - Mathematical notation used to describe the performance of algorithms
+Black Box Testing - Testing method that tests the functionality of a system without examining its internal structures
+Blockchain - Distributed ledger technology used for recording transactions
+Bottleneck - Component of a system that limits its overall performance
+Bubble Sort - Sorting algorithm that repeatedly swaps adjacent elements if they are in the wrong order
+Bytecode - Low-level code that is executed by a virtual machine
+Client-Server Architecture - Network architecture where clients request services from a server
+Closure - Function that has access to variables in its enclosing scope, even after that scope has closed
+Cloud Computing - Delivery of computing services over the internet
+Continuous Integration - Development practice where code changes are frequently integrated into a shared code repository
+Dangling Pointer - Pointer that points to an object that no longer exists
+Deadlock - Situation in which two or more processes are waiting for each other to release resources
+Docker - Platform for building, shipping, and running applications in containers
+Domain Name System - System for translating domain names into IP addresses
+Embedded System - Computer system integrated into a larger device for a specific purpose
