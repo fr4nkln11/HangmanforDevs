@@ -1,14 +1,152 @@
 [
-    {"word": "apple", "hint": "a fruit", "meaning": "a round fruit with a red, yellow, or green skin and a white inside"},
-    {"word": "banana", "hint": "a fruit", "meaning": "an elongated yellow fruit with soft sweet flesh"},
-    {"word": "cherry", "hint": "a fruit", "meaning": "a small round fruit with a red or black skin and a stone inside"},
-    {"word": "orange", "hint": "a fruit", "meaning": "a large round juicy citrus fruit with a tough bright reddish-yellow rind"},
-    {"word": "watermelon", "hint": "a fruit", "meaning": "a large melon with a hard green rind and sweet red flesh"},
-    {"word": "strawberry", "hint": "a fruit", "meaning": "a sweet soft red fruit with a seed-studded surface"},
-    {"word": "pineapple", "hint": "a fruit", "meaning": "a large tropical fruit with a tough spiky rind and sweet yellow flesh"},
-    {"word": "grapefruit", "hint": "a fruit", "meaning": "a large round citrus fruit with a pink or yellow skin and bitter juicy pulp"},
-    {"word": "pomegranate", "hint": "a fruit", "meaning": "a round fruit with a tough reddish outer skin and sweet edible pulp"},
-    {"word": "kiwi", "hint": "a fruit", "meaning": "a small oval fruit with a brown fuzzy skin and green flesh"},
-    {"word": "mango", "hint": "a fruit", "meaning": "a fleshy yellowish-orange tropical fruit with a large woody seed"},
-    {"word": "pear", "hint": "a fruit", "meaning": "a sweet yellowish- or brownish-green edible fruit that is typically narrow at the stalk and wider toward the base"}
+    {
+        "word": "Algorithm",
+        "hint": "A set of instructions designed to perform a specific task",
+        "definition": "A series of steps or procedures that a computer program follows to solve a problem or perform a task"
+    },
+    {
+        "word": "API",
+        "hint": "Enables communication between different software systems",
+        "definition": "An interface or set of protocols that allows different software systems to communicate with each other"
+    },
+    {
+        "word": "Boolean",
+        "hint": "A type of data that can only have two values",
+        "definition": "A data type that can have one of two values, usually denoted as true or false"
+    },
+    {
+        "word": "Cache",
+        "hint": "Stores frequently accessed data",
+        "definition": "A hardware or software component that stores data so that future requests for that data can be served faster"
+    },
+    {
+        "word": "Debugging",
+        "hint": "Identifying and fixing errors in a program",
+        "definition": "The process of finding and resolving defects or problems within a computer program"
+    },
+    {
+        "word": "Function",
+        "hint": "A block of code that performs a specific task",
+        "definition": "A self-contained block of code that performs a specific task and can be reused throughout a program"
+    },
+    {
+        "word": "Interface",
+        "hint": "Defines how different components of a program can interact with each other",
+        "definition": "A set of methods, procedures, and signals that define how different components of a software system can interact with each other"
+    },
+    {
+        "word": "Object",
+        "hint": "A self-contained entity that has properties and methods",
+        "definition": "An instance of a class that encapsulates data and behavior and can interact with other objects through its properties and methods"
+    },
+    {
+        "word": "Recursion",
+        "hint": "A function that calls itself",
+        "definition": "A programming technique in which a function calls itself in order to solve a problem that can be broken down into smaller subproblems"
+    },
+    {
+        "word": "Variable",
+        "hint": "A value that can change during program execution",
+        "definition": "A container that holds a value, which can be changed or manipulated during program execution"
+    },
+    {
+        "word": "Compiler",
+        "hint": "Translates code written in one language to another",
+        "definition": "A software program that translates code written in one programming language into a different programming language"
+    },
+    {
+        "word": "Database",
+        "hint": "A collection of data stored in a structured format",
+        "definition": "A structured collection of data that is stored and managed on a computer system"
+    },
+    {
+        "word": "Encryption",
+        "hint": "The process of encoding data so that it can only be read by authorized parties",
+        "definition": "The process of converting plain text into a coded format that can only be read by authorized parties"
+    },
+    {
+        "word": "Framework",
+        "hint": "A set of reusable components for building software",
+        "definition": "A set of software components that provides a reusable architecture for developing software applications"
+    },
+    {
+        "word": "GUI",
+        "hint": "A graphical user interface for interacting with software",
+        "definition": "A type of interface that allows users to interact with a software program using graphical elements such as buttons, menus, and icons"
+    },
+    {
+        "word": "Inheritance",
+        "hint": "A programming concept where a class inherits properties and behavior from another class",
+        "definition": "A programming concept where a class is based on another class and inherits its properties and behavior"
+    },
+    {
+        "word": "JSON",
+        "hint": "A lightweight data interchange format",
+        "definition": "A lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate"
+    },
+    {
+        "word": "Library",
+        "hint": "A collection of pre-written code that can be reused in different programs",
+        "definition": "A collection of pre-written code that can be used by software developers to perform common tasks without having to write new code from scratch"
+    },
+    {
+        "word": "Object-oriented programming",
+        "hint": "A programming paradigm that focuses on objects and their interactions",
+        "definition": "A programming paradigm that uses objects, which are instances of classes, to represent and manipulate data and the actions that operate on that data"
+    },
+    {
+        "word": "Stack",
+        "hint": "A data structure that follows the Last-In-First-Out (LIFO) principle",
+        "definition": "A data structure that stores a collection of elements and follows the Last-In-First-Out (LIFO) principle, where the last element added to the stack is the first one to be removed"
+    },
+    {
+        "word": "Unit testing",
+        "hint": "Testing individual units or components of a software system",
+        "definition": "A software testing technique that involves testing individual units or components of a software system to ensure that they are working correctly"
+    },
+    {
+        "word": "IDE",
+        "hint": "An integrated development environment for writing, testing and debugging software",
+        "definition": "An integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development"
+    },
+    {
+        "word": "Refactoring",
+        "hint": "Restructuring code without changing its external behavior",
+        "definition": "The process of restructuring existing computer code without changing its external behavior"
+    },
+    {
+        "word": "API",
+        "hint": "A set of protocols and tools for building software",
+        "definition": "An application programming interface (API) is a set of protocols and tools for building software and applications"
+    },
+    {
+        "word": "HTTP",
+        "hint": "A protocol for transferring data over the web",
+        "definition": "The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, hypermedia information systems"
+    },
+    {
+        "word": "Recursion",
+        "hint": "A programming technique where a function calls itself",
+        "definition": "A programming technique where a function calls itself, either directly or indirectly"
+    },
+    {
+        "word": "Semaphore",
+        "hint": "A synchronization object used to control access to a shared resource",
+        "definition": "A synchronization object used to control access to a shared resource in a concurrent system"
+    },
+    {
+        "word": "SQL",
+        "hint": "A domain-specific language used in programming and designed for managing data held in a relational database",
+        "definition": "Structured Query Language (SQL) is a domain-specific language used in programming and designed for managing data held in a relational database management system"
+    },
+    {
+        "word": "Thread",
+        "hint": "A unit of execution within a process",
+        "definition": "A thread of execution is the smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system"
+    },
+    {
+        "word": "Serialization",
+        "hint": "The process of converting an object into a stream of bytes for storage or transmission",
+        "definition": "Serialization is the process of converting an object into a stream of bytes for storage or transmission over a network or to be saved in a file"
+    }
 ]

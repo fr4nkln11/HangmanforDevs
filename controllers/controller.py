@@ -7,10 +7,10 @@ class HangmanController:
         self.model = HangmanModel()
         self.view = HangmanView()
     
-    def run(self):
+    def run(self) -> None:
         while not self.model.game_over:
             self.view.render(self.model)
-            guess = input("pick a letter from A - Z: ").lower()
+            guess = input("pick a letter from A - Z (type '.quit' if you wish to end the game): ").upper()
             message = self.model.check_guess(guess)
             self.view.message(message)
         
