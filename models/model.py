@@ -21,7 +21,7 @@ class HangmanModel:
         self.base_score = 100
         self.score_board = []
         self.total_score = sum(self.score_board)
-    
+
     def new_round(self) -> None:
         self.secret_word = next(self.word_generator)
         self.guessed_letters = set()
@@ -57,7 +57,6 @@ class HangmanModel:
                 self.round_complete = True
                 current_score = self.score()
                 self.total_score = sum(self.score_board)
-                self.new_round()
                 return f"Word completed! You scored +{current_score} points"
             else:
                 return "Correct guess!"

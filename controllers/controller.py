@@ -12,9 +12,14 @@ class HangmanController:
             self.view.render(self.model)
             guess = input("pick a letter from A - Z (type '.quit' if you wish to end the game): ").upper()
             status = self.model.check_guess(guess)
-            self.view.message(status)
+            if self.model.round_complete:
+                self.view.render(self.model)
+                print(status)
+                user_choice = input("press enter to start the next round...")
+                self.model.new_round()
+            else:
+                self.view.message(status)
         
-        self.view.render(self.model)
         print("Thank you for playing my game!")
 
 
