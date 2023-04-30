@@ -18,6 +18,9 @@ class HangmanModel:
         self.round_complete = False
         self.word_generator = (word for word in self.word_bank) # self.get_words()
         self.secret_word = next(self.word_generator)
+        self.base_score = 100
+        self.score_board = []
+        self.total_score = sum(self.score_board)
     
     def new_round(self) -> None:
         self.secret_word = next(self.word_generator)
@@ -26,12 +29,19 @@ class HangmanModel:
         self.LIFE_COUNT = 5
         self.game_over = False
         self.round_complete = False
+        self.base_score = 100
     
+    def score(self) -> str:
+        number_of_incorrect_guesses = len(self.guessed_letters - self.correct_guesses)
+        current_score = self.base_score - (number_of_incorrect_guesses * 10)
+        self.score_board.append(current_score)
+        return str(current_score)
+
     def check_guess(self, guess: str) -> str:
-        current_word = self.secret_word['word'].upper()
+        current_word = set(self.secret_word['word'].upper()) - {" ", "-"}
         # vaidate input: must be only one letter in the alphabet
 
-        if guess == ".quit":
+        if guess.lower() == ".quit":
             self.game_over = True
 
         elif (guess not in ascii_letters) or (len(guess) != 1):
@@ -45,8 +55,10 @@ class HangmanModel:
             self.guessed_letters.add(guess)
             if set(current_word) == self.correct_guesses:
                 self.round_complete = True
+                current_score = self.score()
+                self.total_score = sum(self.score_board)
                 self.new_round()
-                return "Word completed!!!"
+                return f"Word completed! You scored +{current_score} points"
             else:
                 return "Correct guess!"
         else:
