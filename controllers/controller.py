@@ -12,13 +12,14 @@ class HangmanController:
             guess = input("pick a letter from A - Z (type '.quit' if you wish to end the game): ").upper()
             status = self.model.check_guess(guess)
             if self.model.round_complete:
+                self.view.message_box = status
                 self.view.render(self.model)
-                print(status)
+                self.view.message_box = None # clear the message box
                 user_choice = input("press enter to start the next round...")
                 self.model.new_round()
             else:
                 self.view.message(status)
-        print(f"You ran out of chances, Game Over!!! The word was {self.model.secret_word['word']}")
+        print(f"Game Over!!! The word was {self.model.secret_word['word']}")
         print("Thank you for playing my game!")
 
 

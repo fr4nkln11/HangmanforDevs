@@ -31,15 +31,19 @@ class HangmanView:
                 screen.append("_")
 
         os.system("cls||clear")
-        console.rule("Hangman for Devs", align="left")
 
-        hint_view = Panel.fit(model.secret_word['hint'], title="Hint", title_align="left")
-        board_view = Panel.fit(''.join(screen))
-        life_count_view = Panel.fit(str(model.LIFE_COUNT), title="Lives left", title_align="left")
-        score_view = Panel.fit(str(model.total_score), title="Score", title_align="left")
-        guesses_view = Panel.fit(','.join(model.guessed_letters), title="guessed letters", title_align="left")
+        hint_panel = Panel.fit(model.secret_word['hint'], title="Hint", title_align="left")
+        board_panel = Panel.fit(''.join(screen))
+        life_panel = Panel.fit(str(model.LIFE_COUNT), title="Lives left", title_align="left")
+        score_panel = Panel.fit(str(model.total_score), title="Score", title_align="left")
+        guesses_panel = Panel.fit(','.join(model.guessed_letters), title="guessed letters", title_align="left")
 
-        console.print(Columns([life_count_view,score_view,guesses_view]))
-        console.print(Panel.fit(Columns([board_view,hint_view]), title="Guess the word", title_align="left"))
+        main_layout = [Columns([life_panel,score_panel,guesses_panel]),
+                  Panel.fit(Columns([board_panel,hint_panel]), title="Guess the word", title_align="left")]
+        
         if self.message_box:
-            console.print(Panel(self.message_box))
+            main_layout.append(Panel(self.message_box))
+
+        console.print(Panel.fit(Columns(main_layout, column_first=True
+        ), title="Hangman for Devs"))
+        
