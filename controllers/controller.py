@@ -1,6 +1,5 @@
 from views.view import HangmanView
 from models.model import HangmanModel
-from rich import print 
 
 class HangmanController:
     def __init__(self) -> None:
