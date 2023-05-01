@@ -65,6 +65,5 @@ class HangmanModel:
             self.LIFE_COUNT -= 1
             if self.LIFE_COUNT == 0:
                 self.game_over = True
-                return f"You ran out of chances, Game Over!!! The word was {self.secret_word['word']}: {self.secret_word['definition']}"
             else:
                 return f"Incorrect guess, {self.LIFE_COUNT} lives left"

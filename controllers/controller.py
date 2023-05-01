@@ -19,7 +19,7 @@ class HangmanController:
                 self.model.new_round()
             else:
                 self.view.message(status)
-        
+        print(f"You ran out of chances, Game Over!!! The word was {self.model.secret_word['word']}")
         print("Thank you for playing my game!")
 
 
