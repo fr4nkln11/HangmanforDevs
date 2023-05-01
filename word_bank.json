@@ -1,152 +1,458 @@
 [
     {
         "word": "Algorithm",
-        "hint": "A set of instructions designed to perform a specific task",
-        "definition": "A series of steps or procedures that a computer program follows to solve a problem or perform a task"
+        "hint": "Step-by-step instructions for solving a problem"
     },
     {
-        "word": "API",
-        "hint": "Enables communication between different software systems",
-        "definition": "An interface or set of protocols that allows different software systems to communicate with each other"
+        "word": "Abstraction",
+        "hint": "Simplifying complex systems by breaking them down into smaller parts"
+    },
+    {
+        "word": "Application Programming Interface",
+        "hint": "A set of rules for accessing a web-based software application"
+    },
+    {
+        "word": "Assembler",
+        "hint": "Converts assembly language into machine code"
+    },
+    {
+        "word": "Assembly Language",
+        "hint": "Low-level programming language that uses mnemonic codes to represent machine code instructions"
+    },
+    {
+        "word": "Agile Development",
+        "hint": "Iterative and flexible approach to software development"
+    },
+    {
+        "word": "Authentication",
+        "hint": "Process of verifying a user's identity"
+    },
+    {
+        "word": "Binary",
+        "hint": "Number system using only 0s and 1s"
+    },
+    {
+        "word": "Bit",
+        "hint": "Smallest unit of data in a computer"
+    },
+    {
+        "word": "Byte",
+        "hint": "Group of 8 bits"
     },
     {
         "word": "Boolean",
-        "hint": "A type of data that can only have two values",
-        "definition": "A data type that can have one of two values, usually denoted as true or false"
+        "hint": "Data type with two possible values: true or false"
+    },
+    {
+        "word": "Bandwidth",
+        "hint": "Maximum amount of data that can be transmitted over a network"
     },
     {
         "word": "Cache",
-        "hint": "Stores frequently accessed data",
-        "definition": "A hardware or software component that stores data so that future requests for that data can be served faster"
+        "hint": "Temporary storage area for frequently accessed data"
     },
     {
-        "word": "Debugging",
-        "hint": "Identifying and fixing errors in a program",
-        "definition": "The process of finding and resolving defects or problems within a computer program"
-    },
-    {
-        "word": "Function",
-        "hint": "A block of code that performs a specific task",
-        "definition": "A self-contained block of code that performs a specific task and can be reused throughout a program"
-    },
-    {
-        "word": "Interface",
-        "hint": "Defines how different components of a program can interact with each other",
-        "definition": "A set of methods, procedures, and signals that define how different components of a software system can interact with each other"
-    },
-    {
-        "word": "Object",
-        "hint": "A self-contained entity that has properties and methods",
-        "definition": "An instance of a class that encapsulates data and behavior and can interact with other objects through its properties and methods"
-    },
-    {
-        "word": "Recursion",
-        "hint": "A function that calls itself",
-        "definition": "A programming technique in which a function calls itself in order to solve a problem that can be broken down into smaller subproblems"
-    },
-    {
-        "word": "Variable",
-        "hint": "A value that can change during program execution",
-        "definition": "A container that holds a value, which can be changed or manipulated during program execution"
+        "word": "Command Line Interface",
+        "hint": "Text-based interface for interacting with a computer's operating system"
     },
     {
         "word": "Compiler",
-        "hint": "Translates code written in one language to another",
-        "definition": "A software program that translates code written in one programming language into a different programming language"
+        "hint": "Software that converts code written in a high-level programming language into machine code"
+    },
+    {
+        "word": "Computer Architecture",
+        "hint": "Design of a computer system"
+    },
+    {
+        "word": "Central Processing Unit",
+        "hint": "\"Brain\" of a computer that performs most of the processing"
+    },
+    {
+        "word": "Data Structure",
+        "hint": "Way of organizing and storing data"
     },
     {
         "word": "Database",
-        "hint": "A collection of data stored in a structured format",
-        "definition": "A structured collection of data that is stored and managed on a computer system"
+        "hint": "Collection of data organized in a specific way"
+    },
+    {
+        "word": "Debugging",
+        "hint": "Process of finding and fixing errors in code"
+    },
+    {
+        "word": "Domain Name System",
+        "hint": "System that translates domain names into IP addresses"
+    },
+    {
+        "word": "Docker",
+        "hint": "Platform for packaging, distributing, and running applications"
+    },
+    {
+        "word": "Dynamic Programming",
+        "hint": "Method for solving complex problems by breaking them down into smaller subproblems"
     },
     {
         "word": "Encryption",
-        "hint": "The process of encoding data so that it can only be read by authorized parties",
-        "definition": "The process of converting plain text into a coded format that can only be read by authorized parties"
+        "hint": "Process of converting data into a code to prevent unauthorized access"
     },
     {
-        "word": "Framework",
-        "hint": "A set of reusable components for building software",
-        "definition": "A set of software components that provides a reusable architecture for developing software applications"
+        "word": "Firewall",
+        "hint": "Network security system that controls incoming and outgoing network traffic"
     },
     {
-        "word": "GUI",
-        "hint": "A graphical user interface for interacting with software",
-        "definition": "A type of interface that allows users to interact with a software program using graphical elements such as buttons, menus, and icons"
+        "word": "Frontend",
+        "hint": "Part of a web application that users interact with directly"
+    },
+    {
+        "word": "Functional Programming",
+        "hint": "Programming paradigm that emphasizes functions and avoids mutable data"
+    },
+    {
+        "word": "Git",
+        "hint": "Version control system for tracking changes in code"
+    },
+    {
+        "word": "Graphical User Interface",
+        "hint": "Interface that uses graphical elements to allow users to interact with a software application"
+    },
+    {
+        "word": "Hypertext Transfer Protocol",
+        "hint": "Protocol used for transferring data over the web"
+    },
+    {
+        "word": "Integrated Development Environment",
+        "hint": "Software application that provides tools for software development"
     },
     {
         "word": "Inheritance",
-        "hint": "A programming concept where a class inherits properties and behavior from another class",
-        "definition": "A programming concept where a class is based on another class and inherits its properties and behavior"
+        "hint": "Mechanism for creating new classes based on existing ones"
     },
     {
-        "word": "JSON",
-        "hint": "A lightweight data interchange format",
-        "definition": "A lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate"
+        "word": "Java Virtual Machine",
+        "hint": "Virtual machine that runs Java bytecode"
     },
     {
-        "word": "Library",
-        "hint": "A collection of pre-written code that can be reused in different programs",
-        "definition": "A collection of pre-written code that can be used by software developers to perform common tasks without having to write new code from scratch"
+        "word": "JavaScript",
+        "hint": "High-level programming language used for creating dynamic web content"
     },
     {
-        "word": "Object-oriented programming",
-        "hint": "A programming paradigm that focuses on objects and their interactions",
-        "definition": "A programming paradigm that uses objects, which are instances of classes, to represent and manipulate data and the actions that operate on that data"
+        "word": "JavaScript Object Notation",
+        "hint": "Lightweight data interchange format"
     },
     {
-        "word": "Stack",
-        "hint": "A data structure that follows the Last-In-First-Out (LIFO) principle",
-        "definition": "A data structure that stores a collection of elements and follows the Last-In-First-Out (LIFO) principle, where the last element added to the stack is the first one to be removed"
+        "word": "Kernel",
+        "hint": "Core component of an operating system"
     },
     {
-        "word": "Unit testing",
-        "hint": "Testing individual units or components of a software system",
-        "definition": "A software testing technique that involves testing individual units or components of a software system to ensure that they are working correctly"
+        "word": "Lambda Function",
+        "hint": "Anonymous function that can be passed as an argument to another function"
     },
     {
-        "word": "IDE",
-        "hint": "An integrated development environment for writing, testing and debugging software",
-        "definition": "An integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development"
+        "word": "Machine Learning",
+        "hint": "Subset of artificial intelligence that involves training machines to learn from data"
     },
     {
-        "word": "Refactoring",
-        "hint": "Restructuring code without changing its external behavior",
-        "definition": "The process of restructuring existing computer code without changing its external behavior"
+        "word": "Model-View-Controller",
+        "hint": "Design pattern for organizing code in a web application"
     },
     {
-        "word": "API",
-        "hint": "A set of protocols and tools for building software",
-        "definition": "An application programming interface (API) is a set of protocols and tools for building software and applications"
+        "word": "Object-Oriented Programming",
+        "hint": "Programming paradigm based on objects that interact with one another"
     },
     {
-        "word": "HTTP",
-        "hint": "A protocol for transferring data over the web",
-        "definition": "The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, hypermedia information systems"
+        "word": "Operating System",
+        "hint": "Software that manages computer hardware and software resources"
+    },
+    {
+        "word": "Parallel Computing",
+        "hint": "Simultaneous execution of multiple tasks by dividing them into smaller parts"
+    },
+    {
+        "word": "Parser",
+        "hint": "Program that analyzes code and converts it into a format that can be used by another program"
+    },
+    {
+        "word": "Protocol",
+        "hint": "Set of rules for exchanging data over a network"
+    },
+    {
+        "word": "Python",
+        "hint": "High-level programming language used for a variety of tasks"
+    },
+    {
+        "word": "Query",
+        "hint": "Request for data from a database"
     },
     {
         "word": "Recursion",
-        "hint": "A programming technique where a function calls itself",
-        "definition": "A programming technique where a function calls itself, either directly or indirectly"
+        "hint": "Function that calls itself"
     },
     {
-        "word": "Semaphore",
-        "hint": "A synchronization object used to control access to a shared resource",
-        "definition": "A synchronization object used to control access to a shared resource in a concurrent system"
+        "word": "Regular Expression",
+        "hint": "Pattern used to match strings of text"
+    },
+    {
+        "word": "Representational State Transfer API",
+        "hint": "Web-based software architecture for creating web services"
+    },
+    {
+        "word": "Routing",
+        "hint": "Process of directing"
+    },
+    {
+        "word": "Ruby",
+        "hint": "High-level programming language with a focus on simplicity and productivity"
+    },
+    {
+        "word": "Relational Database",
+        "hint": "Database that stores data in tables with relationships between them"
+    },
+    {
+        "word": "Source Code",
+        "hint": "Code written by a programmer in a high-level programming language"
+    },
+    {
+        "word": "Software Development Kit",
+        "hint": "Collection of tools for software development"
+    },
+    {
+        "word": "Stack",
+        "hint": "Data structure that operates on a last-in-first-out (LIFO) principle"
+    },
+    {
+        "word": "Static Typing",
+        "hint": "Programming language feature that requires variables to be declared with a specific data type"
+    },
+    {
+        "word": "Subroutine",
+        "hint": "Reusable block of code that performs a specific task"
     },
     {
         "word": "SQL",
-        "hint": "A domain-specific language used in programming and designed for managing data held in a relational database",
-        "definition": "Structured Query Language (SQL) is a domain-specific language used in programming and designed for managing data held in a relational database management system"
+        "hint": "Structured Query Language used for managing and querying relational databases"
+    },
+    {
+        "word": "Syntax",
+        "hint": "Set of rules for writing code in a programming language"
+    },
+    {
+        "word": "System Call",
+        "hint": "Request made by a program to the operating system for a service"
+    },
+    {
+        "word": "Test-Driven Development",
+        "hint": "Software development methodology that emphasizes writing tests before writing code"
+    },
+    {
+        "word": "Threading",
+        "hint": "Concurrent execution of multiple threads within a single program"
+    },
+    {
+        "word": "Transpiler",
+        "hint": "Software that translates code written in one programming language to another"
+    },
+    {
+        "word": "Turing Machine",
+        "hint": "Hypothetical device used in the study of computation and algorithms"
+    },
+    {
+        "word": "Unix",
+        "hint": "Operating system developed in the 1970s"
+    },
+    {
+        "word": "URL",
+        "hint": "Uniform Resource Locator used to identify and locate web resources"
+    },
+    {
+        "word": "Unicode",
+        "hint": "Standard for encoding characters in digital text"
+    },
+    {
+        "word": "Virtual Machine",
+        "hint": "Software that simulates a computer system"
+    },
+    {
+        "word": "Version Control",
+        "hint": "System for tracking changes to code over time"
+    },
+    {
+        "word": "Virtual Private Network",
+        "hint": "Secure network connection that allows remote access to a private network"
+    },
+    {
+        "word": "Vulnerability",
+        "hint": "Weakness in software that can be exploited by attackers"
+    },
+    {
+        "word": "Web Server",
+        "hint": "Software that serves web pages to clients over the internet"
+    },
+    {
+        "word": "While Loop",
+        "hint": "Loop that continues executing as long as a condition is true"
+    },
+    {
+        "word": "Web Development",
+        "hint": "Process of creating web applications and websites"
+    },
+    {
+        "word": "XML",
+        "hint": "Extensible Markup Language used for storing and transmitting data"
+    },
+    {
+        "word": "XOR",
+        "hint": "Logical operator that returns true if only one of two values is true"
+    },
+    {
+        "word": "Yacc",
+        "hint": "Compiler-compiler used for generating parsers and compilers"
+    },
+    {
+        "word": "YAML",
+        "hint": "Human-readable data serialization format"
+    },
+    {
+        "word": "Zip",
+        "hint": "Compressed file format used for reducing file size and archiving"
+    },
+    {
+        "word": "API Gateway",
+        "hint": "Proxy server that acts as an interface between a web application and a microservices architecture"
+    },
+    {
+        "word": "Agile Manifesto",
+        "hint": "Statement of values and principles for agile software development"
+    },
+    {
+        "word": "Artificial Neural Network",
+        "hint": "Computing system inspired by the structure of the human brain"
+    },
+    {
+        "word": "Authentication Token",
+        "hint": "Data token used for authentication and authorization purposes"
+    },
+    {
+        "word": "Babel",
+        "hint": "Compiler for translating ECMAScript 2015+ (ES6+) code into backwards-compatible JavaScript"
+    },
+    {
+        "word": "Big O Notation",
+        "hint": "Mathematical notation used to describe the performance of algorithms"
+    },
+    {
+        "word": "Black Box Testing",
+        "hint": "Testing method that tests the functionality of a system without examining its internal structures"
+    },
+    {
+        "word": "Blockchain",
+        "hint": "Distributed ledger technology used for recording transactions"
+    },
+    {
+        "word": "Bottleneck",
+        "hint": "Component of a system that limits its overall performance"
+    },
+    {
+        "word": "Bubble Sort",
+        "hint": "Sorting algorithm that repeatedly swaps adjacent elements if they are in the wrong order"
+    },
+    {
+        "word": "Bytecode",
+        "hint": "Low-level code that is executed by a virtual machine"
+    },
+    {
+        "word": "Client-Server Architecture",
+        "hint": "Network architecture where clients request services from a server"
+    },
+    {
+        "word": "Closure",
+        "hint": "Function that has access to variables in its enclosing scope, even after that scope has closed"
+    },
+    {
+        "word": "Cloud Computing",
+        "hint": "Delivery of computing services over the internet"
+    },
+    {
+        "word": "Continuous Integration",
+        "hint": "Development practice where code changes are frequently integrated into a shared code repository"
+    },
+    {
+        "word": "Dangling Pointer",
+        "hint": "Pointer that points to an object that no longer exists"
+    },
+    {
+        "word": "Deadlock",
+        "hint": "Situation in which two or more processes are waiting for each other to release resources"
+    },
+    {
+        "word": "Embedded System",
+        "hint": "Computer system integrated into a larger device for a specific purpos"
+    },
+    {
+        "word": "API",
+        "hint": "Enables communication between different software systems"
+    },
+    {
+        "word": "Function",
+        "hint": "A block of code that performs a specific task"
+    },
+    {
+        "word": "Interface",
+        "hint": "Defines how different components of a program can interact with each other"
+    },
+    {
+        "word": "Object",
+        "hint": "A self-contained entity that has properties and methods"
+    },
+    {
+        "word": "Variable",
+        "hint": "A value that can change during program execution"
+    },
+    {
+        "word": "Framework",
+        "hint": "A set of reusable components for building software"
+    },
+    {
+        "word": "GUI",
+        "hint": "A graphical user interface for interacting with software"
+    },
+    {
+        "word": "JSON",
+        "hint": "A lightweight data interchange format"
+    },
+    {
+        "word": "Library",
+        "hint": "A collection of pre-written code that can be reused in different programs"
+    },
+    {
+        "word": "Object-oriented programming",
+        "hint": "A programming paradigm that focuses on objects and their interactions"
+    },
+    {
+        "word": "Unit testing",
+        "hint": "Testing individual units or components of a software system"
+    },
+    {
+        "word": "IDE",
+        "hint": "An integrated development environment for writing, testing and debugging software"
+    },
+    {
+        "word": "Refactoring",
+        "hint": "Restructuring code without changing its external behavior"
+    },
+    {
+        "word": "HTTP",
+        "hint": "A protocol for transferring data over the web"
+    },
+    {
+        "word": "Semaphore",
+        "hint": "A synchronization object used to control access to a shared resource"
     },
     {
         "word": "Thread",
-        "hint": "A unit of execution within a process",
-        "definition": "A thread of execution is the smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system"
+        "hint": "A unit of execution within a process"
     },
     {
         "word": "Serialization",
-        "hint": "The process of converting an object into a stream of bytes for storage or transmission",
-        "definition": "Serialization is the process of converting an object into a stream of bytes for storage or transmission over a network or to be saved in a file"
+        "hint": "The process of converting an object into a stream of bytes for storage or transmission"
     }
 ]
