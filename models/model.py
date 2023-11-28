@@ -1,6 +1,5 @@
 import json
 import random
-from rich import print
 from string import ascii_letters
 
 def load_word_bank() -> list:
@@ -37,7 +36,7 @@ class HangmanModel:
         self.score_board.append(current_score)
         return str(current_score)
 
-    def check_guess(self, guess: str) -> str:
+    def check_guess(self, guess: str) -> str | None:
         current_word = set(self.secret_word['word'].upper()) - {" ", "-"}
         # vaidate input: must be only one letter in the alphabet
 

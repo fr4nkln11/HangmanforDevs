@@ -11,7 +11,7 @@ custom_theme = Theme({
     "prompt": "yellow"
 })
 
-console = Console()
+console = Console(theme=custom_theme)
 
 class HangmanView:
     def __init__(self) -> None:
@@ -20,7 +20,7 @@ class HangmanView:
     def message(self, prompt: str) -> None:
         self.message_box = prompt
     
-    def render(self, model: object) -> str:
+    def render(self, model: object) -> str | None:
         screen = [] # initialize screen with an empty list
         for letter in model.secret_word['word'].upper():
             if letter in model.correct_guesses:
@@ -42,8 +42,7 @@ class HangmanView:
                   Panel.fit(Columns([board_panel,hint_panel]), title="Guess the word", title_align="left")]
         
         if self.message_box:
-            main_layout.append(Panel(self.message_box))
+            main_layout.append(Panel(self.message_box, style="prompt"))
 
-        console.print(Panel.fit(Columns(main_layout, column_first=True
-        ), title="Hangman for Devs"))
+        console.print(Panel.fit(Columns(main_layout, column_first=True), title="Hangman for Devs"))
         
